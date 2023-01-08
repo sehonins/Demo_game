@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Scenes/GameStart/MainMenu.unity
+    guid: e0178821ae93b094ba38a8909e4c7527
+  - enabled: 1
+    path: Assets/Scenes/Scenes/GrassFight/GrasFight.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Scenes/RoadFight/RoadScene.unity
+    guid: 873dbaea356e0dc40b4bef761271220a
+  m_configObjects: {}
