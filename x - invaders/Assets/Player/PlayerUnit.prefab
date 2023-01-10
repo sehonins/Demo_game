@@ -436,9 +436,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43cef615b4dbc0446bf2d85bfa94d1ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponEqupid: {fileID: 11400000, guid: 54a54a003eba7a14999c64c2ab3aa7d7, type: 2}
-  buletPlace: {fileID: 7660460192997757374}
-  bulleText: {fileID: 1656272788}
+  _weaponEqupid: {fileID: 11400000, guid: 54a54a003eba7a14999c64c2ab3aa7d7, type: 2}
+  _buletPlace: {fileID: 7660460192997757374}
+  _bulleText: {fileID: 1656272788}
 --- !u!61 &889591350
 BoxCollider2D:
   m_ObjectHideFlags: 0

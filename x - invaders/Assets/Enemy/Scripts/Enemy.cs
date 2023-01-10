@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -12,7 +13,7 @@ public class Enemy : MonoBehaviour
 
     float _deadBodyScrollSpeed = .2f;
 
-
+    
     private void Start()
     {
        _currentHp = _maxHp;
@@ -31,15 +32,15 @@ public class Enemy : MonoBehaviour
 
     }
   
-
+    
     void GivePoints()
     {
         Inventory inventory = FindObjectOfType<Inventory>();
-        if(inventory != null)
+        if (inventory != null)
         {
             inventory.GetPoints(_pointsForKill);
         }
-        
+
     }
 
     private void DisableEnemy()
@@ -47,8 +48,18 @@ public class Enemy : MonoBehaviour
         gameObject.GetComponent<BoxCollider2D>().enabled = false;
         gameObject.GetComponent<EnemyMovement>()._moveSpeed = _deadBodyScrollSpeed;
         gameObject.GetComponent<SpriteRenderer>().sortingOrder = 0;
-        if(_anim!= null)
-        _anim.Play("Goblin_deadAnimation");
+        if (_anim != null)
+            _anim.Play("Goblin_deadAnimation");
+        OnEnemysleftChange();
+    }
+
+    private static void OnEnemysleftChange()
+    {
+        EnemySpawner enemyspawner = FindObjectOfType<EnemySpawner>();
+        if (enemyspawner != null)
+        {
+            enemyspawner.OnEnemyDied();
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,9 +11,11 @@ public class Inventory : MonoBehaviour
     private void Start()
     {
         DispalyPoints();
+        
     }
-    public int Points { get { return _points; } }   
 
+    #region Points
+    public int Points { get { return _points; } }
     public void GetPoints(int points)
     {
         _points += points;
@@ -26,4 +29,7 @@ public class Inventory : MonoBehaviour
             _pointText.text = _points.ToString();
         }
     }
+    #endregion
+
+   
 }

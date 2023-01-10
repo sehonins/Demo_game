@@ -463,7 +463,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34d36f92ffe10244093feca0998213c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneCount: 0
+  _sceneCount: 0
 --- !u!1 &1744298990
 GameObject:
   m_ObjectHideFlags: 0
@@ -493,10 +493,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5925de3cd58573547b6c0c6a327ee90f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waveConfigs:
+  _waveConfigs:
   - {fileID: 11400000, guid: 592ba3bc9e6f2cc4683deded595922f4, type: 2}
   - {fileID: 11400000, guid: dfb660624ed15cb4089985d2c4314d60, type: 2}
   - {fileID: 11400000, guid: 4237dfcc67cb6db4998fcd9d1302c032, type: 2}
+  _enemysLeft: 0
 --- !u!4 &1744298993
 Transform:
   m_ObjectHideFlags: 0
@@ -552,7 +553,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 575884106372897665, guid: b34e538ca19d8de4ab3dcda1fea0233f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -5.000023
+      value: -5.0000305
       objectReference: {fileID: 0}
     - target: {fileID: 5160750057407676392, guid: b34e538ca19d8de4ab3dcda1fea0233f, type: 3}
       propertyPath: m_RootOrder

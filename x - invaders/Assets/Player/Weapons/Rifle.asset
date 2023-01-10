@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d86d405f023ded24b8884746feb17aa7, type: 3}
   m_Name: Rifle
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 1689809240164128661, guid: e03c052f5aa077c4ba204ecd728089bb, type: 3}
-  bulletCount: 50
-  relaodTime: 0
-  timeBetwenShoots: 0.1
+  BulletPrefab: {fileID: 1689809240164128661, guid: e03c052f5aa077c4ba204ecd728089bb, type: 3}
+  BulletCount: 50
+  RelaodTime: 1
+  TimeBetwenShoots: 0.1
